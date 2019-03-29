@@ -41,8 +41,11 @@ The system is built on top of Laravel 5.3, so to proceed with the installation y
 7. Rename the docker example `.env` file using `cp .env.docker.example .env`
 8. Run `php artisan key:generate` to generate an application key (APP_KEY)
 9. Run `php artisan migrate` to run all of the migration
-10. Add `127.0.0.1 hrm.local:8080` to your `/etc/hosts` file
-11. Access the site using `hrm.local:8080` in your browser
+10.Permission
+- chown -R www-data:www-data /var/www
+- chmod -R 755 /var/www/storage
+11. Add `127.0.0.1 hrm.local:8080` to your `/etc/hosts` file
+12. Access the site using `hrm.local:8080` in your browser
 
 ## Contributing
 
