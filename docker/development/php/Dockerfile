@@ -12,7 +12,7 @@ RUN apt-get update; \
         libpng-dev \
         gnupg \
         gnupg2 \
-        gnupg1 \
+        gnupg1 \ 
         libzip-dev
 
 RUN docker-php-ext-install bcmath
